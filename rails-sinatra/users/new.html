@@ -1,0 +1,11 @@
+<!-- Now imagine you are in sinatra land -->
+
+<!-- Write out all of the appropriate html for a user who goes to the form to create a new user -->
+<!-- Imagine that a user both a name and a hometown -->
+<form method="POST" action="/users">  
+  <label for="username">User Name:</label>  
+    <input type="text" name="user[name]">
+  <label for="hometown">Hometown:</label>
+    <input type="text" name="user[hometown]">
+  <input type="submit" value="Create User">
+</form>
