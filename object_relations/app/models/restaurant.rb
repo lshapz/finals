@@ -22,6 +22,9 @@ class Restaurant
   end
 
   def customers
+#     self.reviews.map do |review|
+#       review.customer
+#   end
     cust_list = self.reviews.each do |review|
       Customer.find_by_name(review.cust_name)
     end
@@ -29,6 +32,7 @@ class Restaurant
   end
 
   def reviews
+#     review should store the restaurant object, not just that restaurant name.
     rev_list = Review.all.select do |review| 
       review.rest_name == self.name
     end
