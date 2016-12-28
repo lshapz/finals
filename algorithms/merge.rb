@@ -12,6 +12,7 @@ def merge_sort(array)
   kid_a = 0
   kid_b = 0
 
+# this would become easier by shifting the elements off, instead of having to keep two different indexes.
   while kid_a < sub_a.length && kid_b < sub_b.length
     a = sub_a[kid_a]
     be = sub_b[kid_b]
